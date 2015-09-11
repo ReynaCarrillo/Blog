@@ -1,0 +1,9 @@
+<tr>
+			<td><%= post.title%></td>
+			<td><%= post.boby%></td>
+			<td><%= post.author%></td>
+			<td style="text-align:center"><%= post.created_at.strftime("%d/%b, %y")%></td>
+			<td style="text-align:center"><%= post.updated_at.strftime("%d/%b, %y")%></td>
+			<td><%= link_to "Editar", edit_post_path(post)%></td>
+			<td><%= link_to "Eliminar", post_path(post), data:{method:"DELETE"}%></td>
+</tr>	

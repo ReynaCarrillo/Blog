@@ -1,0 +1,17 @@
+<h1>Todas las publicaciones</h1>
+<%=link_to "Crear nueva publicaciòn", new_post_path %>
+
+<table>
+	<thead>
+		<tr>
+			<th>Titulo</th>
+			<th>Cuerpo</th>
+			<th>Autor</th>
+			<th>Fecha de Creaciòn</th>
+			<th>Ultima modificaciòn</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%= render @posts%>
+	</tbody>
+</table>
